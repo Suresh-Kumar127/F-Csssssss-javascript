@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript random Number assignment</title>
+  </head>
+  <body>
+    <button onclick="calculation(20,80, 'add')">Add</button>
+    <button onclick="calculation(20,80, 'subtract')">subtract</button>
+
+    <script>
+      // var enterNumber = Number(prompt("Enter a number between 1-10"));
+      // if (enterNumber > 1 && enterNumber <= 10) {
+      //   function luckyDraw() {
+      //     var randNum = Math.random();
+      //     randNum = randNum * 10 + 1;
+      //     randNum = Math.floor(randNum);
+      //     console.log(randNum);
+      //     if (randNum === enterNumber) {
+      //       alert("Congratulation you won 5-star shopping token");
+      //     } else {
+      //       alert("Try Again! Thanks for participation");
+      //     }
+      //   }
+      //   console.log(luckyDraw());
+      // }
+      function calculation(num1, num2, type) {
+        if (type === "add") {
+          var result;
+          result = num1 + num2;
+          console.log(result);
+        } else {
+          result = num2 - num1;
+          console.log(result);
+        }
+      }
+    </script>
+  </body>
+</html>
